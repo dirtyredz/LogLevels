@@ -77,6 +77,7 @@ will only display prints with warning and below.
 
 Thats it, your now using LogLevels giving you a clean and easy to read console.
 
+
 ## DEFAULTS
 ___
 
@@ -91,8 +92,10 @@ __debug__
 __trace__
 __all__
 
+
 ## Downloads
 ___
+
 
 
 ## Changelog
@@ -100,9 +103,11 @@ ___
 I dont think there will be much of any changing going on, this is a simple mod.
 Although if you have an idea for this mod let me no in a reply, thxs.
 
+
 ## GITHUB
 ___
 https://github.com/dirtyredz/LogLevels
+
 
 ## DONATE
 ___
