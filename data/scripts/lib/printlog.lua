@@ -1,7 +1,6 @@
 package.path = package.path .. ";data/scripts/lib/?.lua"
 local levels = require('loglevels')
 local oldprint = print
-local debug = false
 
 -- override the default print function
 print = function(...)
@@ -33,10 +32,6 @@ print = function(...)
           end
         end
       end
-    end
-    --Print debug info for this script
-    if CurrentLevel >= levels.debug and debug then
-      oldprint('[DEBUG]  Current Level: ' .. CurrentLevel .. ', PrintLevel: ' .. PrintLevel)
     end
 
     --prepend messages
