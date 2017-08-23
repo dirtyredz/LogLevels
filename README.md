@@ -84,12 +84,19 @@ ___
 Here are the default LogLevels (can be configured to what you want)
 
 __off__
+
 __fatal__
+
 __error__
+
 __warning__
+
 __info__
+
 __debug__
+
 __trace__
+
 __all__
 
 
