@@ -71,7 +71,7 @@ Then from console or ingame, set the loglevel with the command:
 Will display every print in the example above
 while:
 
-   /loglevel warning
+    /loglevel warning
 
 will only display prints with warning and below.
 
@@ -82,14 +82,14 @@ ___
 
 Here are the default LogLevels (can be configured to what you want)
 
-off
-fatal
-error
-warning
-info
-debug
-trace
-all
+__off__
+__fatal__
+__error__
+__warning__
+__info__
+__debug__
+__trace__
+__all__
 
 ## Downloads
 ___
@@ -111,3 +111,63 @@ http://dirtyredz.com/donate
 
 Become a patron:
 https://www.patreon.com/Dirtyredz
+
+
+## MY OTHER MODS
+___
+__DSM_
+-A project dedicated to server deployment, management, and exposing features to a web interface.
+http://www.avorion.net/forum/index.php/topic,3507.0.html
+
+__Reganerative Asteroid Fields__
+-Regenerates designated sectors, and randomly appearing sectors, of minable asteroids.
+http://www.avorion.net/forum/index.php/topic,3055.0.html
+
+__Subspace Corridor__
+-A modders recources, designed to mimick /teleport, due to server commands not being available through the api.
+http://www.avorion.net/forum/index.php/topic,3148.0.html
+
+__Dirty Buoy's__
+-Allows players to spawn Navigational and Sentry Buoys, More to come soon.
+-These buoys have unique features players cant get in normal game play, for example: Navigational buoys are invincible and cannot be moved. A great way to mark a distance wreckage or minarable rich asteroid field.
+--Rusty Servers only at the moment.
+
+__LogLevels__
+-LogLevels gives modders the ability to set levels for there print functions.
+-Aswell as allowing server owners to clean up there consoles, making it easier to read.
+
+__NoNeutralCore__
+-A small script for stopping the creation of neutral zones inside the core.
+http://www.avorion.net/forum/index.php/topic,3472.0.html
+
+__DirtyCargoExtender__
+-Extends the cargo hold of any NPC station discovered with low cargo holds.
+--Patreon Members only
+
+__DirtySecure__
+-A mod which assigned PVP or PVE sectors based on distance from core.
+-Provides Offline Protection to Players ships.
+-Provides protection for NPC stations.
+--Rusty Servers only at the moment
+
+__Reganerative Claimable Asteroids__
+-A mod which respawns claimable asteroids, when theyve been moved or turned into a mine.
+-Also will unclaim or unsell an asteroid after a configured number of days
+-Keeps the galaxy alive, providing claimable asteroids for new players.
+--Rusty Servers only at the moment
+
+__Death Info__
+-Used to track cords of a players death point, assigning player values, for other mods to use.
+--Rusty Servers only at the moment.
+
+__/Back__
+-A command using DeathInfo and Subspace Corridor, to teleport a players drone BACK to there death point.
+--Rusty Servers only at the moment.
+
+__DistCore HUD__
+-Displays distance to the core on the players hud
+--Rusty Servers only at the moment.
+
+Any mod listed as Rusty Servers only, are live and active on the Rusty Servers.
+Want the mod for your server? Lets talk and ill see about releasing the mod to you/public.
+Not all mods on Rusty will remain there, they will eventually be released to the public.
