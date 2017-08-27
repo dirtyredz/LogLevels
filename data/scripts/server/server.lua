@@ -2,7 +2,7 @@ package.path = package.path .. ";data/scripts/lib/?.lua"
 package.path = package.path .. ";data/scripts/server/?.lua"
 require ("factions")
 require ("stringutility")
-local levels = require("loglevels")
+local levels = require("LogLevels")
 
 
 function onStartUp()

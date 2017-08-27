@@ -32,8 +32,8 @@ Open any file you wish to silent output from, say a mod you have installed.
 once open, drag and drop these couple of lines at the top of the file:
 
     --LogLevels - Dirtyredz|David McClain
-    package.path = package.path .. ";data/scripts/lib/?.lua"
-    require("printlog")
+    package.path = package.path .. ";mods/LogLevels/scripts/lib/?.lua"
+    require("PrintLog")
 
 This will give Every print function in the file a standard level of INFO.
 Then from console or ingame, set the loglevel with the command:
@@ -47,9 +47,9 @@ Open any file you wish to silent output from, say a mod you have installed.
 once open, drag and drop these couple of lines at the top of the file:
 
     --LogLevels - Dirtyredz|David McClain
-    package.path = package.path .. ";data/scripts/lib/?.lua"
-    require("printlog")
-    local logLevels = require("loglevels")
+    package.path = package.path .. ";mods/LogLevels/scripts/lib/?.lua"
+    require("PrintLog")
+    local logLevels = require("LogLevels")
 
 This will give Every print function in the file a standard level of INFO, and give you access to the loglevels table.
 Now its time to specify what level you want each print function to be at, hers an example:
@@ -109,8 +109,7 @@ ___
 
 ## Changelog
 ___
-I dont think there will be much of any changing going on, this is a simple mod.
-Although if you have an idea for this mod let me no in a reply, thxs.
+--1.0.1  Moved files to a new directory, in preperation for steam support of mods.
 
 
 ## GITHUB
@@ -149,6 +148,7 @@ __Dirty Buoy's__
 __LogLevels__
 -LogLevels gives modders the ability to set levels for there print functions.
 -Aswell as allowing server owners to clean up there consoles, making it easier to read.
+http://www.avorion.net/forum/index.php/topic,3799.0.html
 
 __NoNeutralCore__
 -A small script for stopping the creation of neutral zones inside the core.

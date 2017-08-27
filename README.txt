@@ -1,6 +1,6 @@
-[br][size=28pt]LogLevels[/size][/br]
+[center][b][size=32pt]LogLevels[/size][/b][/center]
 
-![alt text](http://imgur.com/UyQU5y2.png)
+[center][img]http://imgur.com/UyQU5y2.png[/img][/center]
 [hr]
 This mod is designed for Modders and Server owners.
 
@@ -13,7 +13,7 @@ However these methods are not very clean, and easily used accross multiple mods/
 
 That is why I have decided to release this mod to the public.
 
-![alt text](http://imgur.com/YP4RuRg.png)
+[center][img]http://imgur.com/YP4RuRg.png[/img][/center]
 [hr]
 
 As you can see LogLevels has many features.
@@ -33,8 +33,8 @@ once open, drag and drop these couple of lines at the top of the file:
 
     [code]
     --LogLevels - Dirtyredz|David McClain
-    package.path = package.path .. ";data/scripts/lib/?.lua"
-    require("printlog")
+    package.path = package.path .. ";mods/LogLevels/scripts/lib/?.lua"
+    require("PrintLog")
     [/code]
 
 This will give Every print function in the file a standard level of INFO.
@@ -52,9 +52,9 @@ once open, drag and drop these couple of lines at the top of the file:
 
     [code]
     --LogLevels - Dirtyredz|David McClain
-    package.path = package.path .. ";data/scripts/lib/?.lua"
-    require("printlog")
-    local logLevels = require("loglevels")
+    package.path = package.path .. ";mods/LogLevels/scripts/lib/?.lua"
+    require("PrintLog")
+    local logLevels = require("LogLevels")
     [/code]
 
 This will give Every print function in the file a standard level of INFO, and give you access to the loglevels table.
@@ -121,8 +121,7 @@ Here are the default LogLevels (can be configured to what you want)
 
 [b][size=24pt]Changelog[/size][/b]
 [hr]
-I dont think there will be much of any changing going on, this is a simple mod.
-Although if you have an idea for this mod let me no in a reply, thxs.
+--1.0.1  Moved files to a new directory, in preperation for steam support of mods.
 
 
 [b][size=24pt]GITHUB[/size][/b]
@@ -141,6 +140,7 @@ https://www.patreon.com/Dirtyredz
 
 [b][size=24pt]MY OTHER MODS[/size][/b]
 [hr]
+[spoiler]
 [b]DSM[/b]
 -A project dedicated to server deployment, management, and exposing features to a web interface.
 http://www.avorion.net/forum/index.php/topic,3507.0.html
@@ -161,6 +161,7 @@ http://www.avorion.net/forum/index.php/topic,3148.0.html
 [b]LogLevels[/b]
 -LogLevels gives modders the ability to set levels for there print functions.
 -Aswell as allowing server owners to clean up there consoles, making it easier to read.
+http://www.avorion.net/forum/index.php/topic,3799.0.html
 
 [b]NoNeutralCore[/b]
 -A small script for stopping the creation of neutral zones inside the core.
@@ -197,3 +198,4 @@ http://www.avorion.net/forum/index.php/topic,3472.0.html
 Any mod listed as Rusty Servers only, are live and active on the Rusty Servers.
 Want the mod for your server? Lets talk and ill see about releasing the mod to you/public.
 Not all mods on Rusty will remain there, they will eventually be released to the public.
+[/spoiler]

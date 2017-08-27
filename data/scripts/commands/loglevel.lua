@@ -1,5 +1,5 @@
-package.path = package.path .. ";data/scripts/lib/?.lua"
-local levels = require("loglevels")
+package.path = package.path .. ";mods/LogLevels/scripts/lib/?.lua"
+local levels = require("LogLevels")
 
 function execute(sender, commandName, level, ...)
   local args = {...}

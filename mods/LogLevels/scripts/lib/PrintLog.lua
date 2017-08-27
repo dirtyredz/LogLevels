@@ -1,10 +1,9 @@
-package.path = package.path .. ";data/scripts/lib/?.lua"
-local levels = require('loglevels')
+package.path = package.path .. ";mods/LogLevels/scripts/lib/?.lua"
+local levels = require('LogLevels')
 local oldprint = print
 
 -- override the default print function
 print = function(...)
-  --Client fail save
   if Server == nil then
       oldprint(...)
   else
@@ -25,6 +24,7 @@ print = function(...)
       if type(tempArg) == "number" then
         --if the number matches one of our loglevels
         for _, logLevel in pairs(levels) do
+
           if tempArg == logLevel then
             PrintLevel = tempArg
             hadPrintLevel = true
@@ -35,7 +35,7 @@ print = function(...)
     end
 
     --prepend messages
-    local prepend = '[INFO]'
+    local prepend = ''
     for index,value in pairs(levels) do
       if PrintLevel == value then
         prepend = '['..string.upper(index)..']  '
@@ -52,7 +52,6 @@ print = function(...)
     if PrintLevel <= CurrentLevel then
       oldprint(table.unpack(args))
     else
-      --Send to server log instead of console
       printlog(table.unpack(args))
     end
   end
