@@ -116,7 +116,7 @@ Here are the default LogLevels (can be configured to what you want)
 
 [b][size=24pt]Downloads[/size][/b]
 [hr]
-[url=https://github.com/dirtyredz/LogLevels/releases/download/1.0.0/LogLevels.zip]LogLevels v1.0.0[/url]
+[url=https://github.com/dirtyredz/LogLevels/releases/download/1.0.1/LogLevels v1.0.1.zip]LogLevels v1.0.1[/url]
 
 
 [b][size=24pt]Changelog[/size][/b]

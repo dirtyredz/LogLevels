@@ -104,7 +104,7 @@ __all__
 
 ## Downloads
 ___
-[LogLevels v1.0.0](https://github.com/dirtyredz/LogLevels/releases/download/1.0.0/LogLevels.zip)
+[LogLevels v1.0.1](https://github.com/dirtyredz/LogLevels/releases/download/1.0.1/LogLevels v1.0.1.zip)
 
 
 ## Changelog
