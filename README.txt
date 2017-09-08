@@ -149,6 +149,10 @@ http://www.avorion.net/forum/index.php/topic,3507.0.html
 -Regenerates designated sectors, and randomly appearing sectors, of minable asteroids.
 http://www.avorion.net/forum/index.php/topic,3055.0.html
 
+[b]MoveUI[/b]
+-A mod for adding custom UIs to the screen.
+http://www.avorion.net/forum/index.php/topic,3834.0.html
+
 [b]Subspace Corridor[/b]
 -A modders recources, designed to mimick /teleport, due to server commands not being available through the api.
 http://www.avorion.net/forum/index.php/topic,3148.0.html
