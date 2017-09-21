@@ -22,9 +22,6 @@ Let me show you how you can start useing LogLevels in your mod or server today!
 
 ## SETUP
 ___
-Make sure to move the files inside the zip to your server, properly.
-If you have a modified server.lua, just grab the few lines out of my file and place in yours.
-
 There are two ways of using LogLevels, Basic and Advanced.
 
 __Basic Usage:__
@@ -36,9 +33,9 @@ once open, drag and drop these couple of lines at the top of the file:
     require("PrintLog")
 
 This will give Every print function in the file a standard level of INFO.
-Then from console or ingame, set the loglevel with the command:
+Then from console or ingame, set the consolelevel with the command:
 
-    /loglevel warning
+    /consolelevel warning
 
 as WARN is lower then INFO, anything in that file is now silenced in the console, but still being printed to the server log.
 
@@ -66,14 +63,14 @@ Now its time to specify what level you want each print function to be at, hers a
     end
 
 Thats it, now we set the level we wish to display
-Then from console or ingame, set the loglevel with the command:
+Then from console or ingame, set the consolelevel with the command:
 
-    /loglevel trace
+    /consolelevel trace
 
 Will display every print in the example above
 while:
 
-    /loglevel warning
+    /consolelevel warning
 
 will only display prints with warning and below.
 
@@ -104,12 +101,31 @@ __all__
 
 ## Downloads
 ___
+https://github.com/dirtyredz/LogLevels/releases/download/1.1.0/LogLevels.v1.1.0.zip
+
 https://github.com/dirtyredz/LogLevels/releases/download/1.0.1/LogLevels.v1.0.1.zip
 
 
 ## Changelog
 ___
---1.0.1  Moved files to a new directory, in preperation for steam support of mods.
+1.1.0
+  -Inserting Level type infront of message instead on concatenate, fixs erros when printing nil variables.
+  -introduced new command /consolelevel, now when wanting to adjust whats shown on the console, use /consolelevel
+  /loglevel will now restrict whats printed to the log in the case the console message is not printed
+
+  ie:
+
+  /consolelevel warning
+  /loglevel debug
+
+  the console will only show console messages warning,error,fatel
+  and the serverLog will show debug,info,warning,error,fatel
+
+  note:
+  setting the /loglevel lower then /consolelevel, will have no effect since all console messages are automatically sent to the server log (this cannot be changed)
+
+1.0.1
+  -Moved files to a new directory, in preperation for steam support of mods.
 
 
 ## GITHUB
