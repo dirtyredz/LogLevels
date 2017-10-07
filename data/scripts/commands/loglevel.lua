@@ -11,6 +11,12 @@ function execute(sender, commandName, level, ...)
     return 0, "", ""
   end
 
+  local levelNum = tonumber(level)
+  if type(levelNum) == 'number' then
+    Server():setValue('console_level',levelNum)
+    return 0, "", ""
+  end
+
   for levelName, logLevel in pairs(levels) do
 
     if level == levelName then
@@ -40,13 +46,15 @@ function getDescription()
 end
 
 function getHelp()
-    local availableOptions = ''
-    for levelName, logLevel in pairs(levels) do
+  local availableOptions = ''
+  for levelName, logLevel in pairs(levels) do
+    if type(logLevel) == 'number' then
       if availableOptions == '' then
         availableOptions = levelName
       else
         availableOptions = availableOptions..'/'..levelName
       end
     end
+  end
     return "Sets the log level, use: /loglevel ["..availableOptions.."]"
 end

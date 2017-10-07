@@ -11,6 +11,12 @@ function execute(sender, commandName, level, ...)
     return 0, "", ""
   end
 
+  local levelNum = tonumber(level)
+  if type(levelNum) == 'number' then
+    Server():setValue('console_level',levelNum)
+    return 0, "", ""
+  end
+
   for levelName, logLevel in pairs(levels) do
 
     if level == levelName then
@@ -29,6 +35,8 @@ function execute(sender, commandName, level, ...)
 
   end
 
+
+
   if sender ~= nil then
     Player:sendChatMessage('Server', 0, 'Unkown consolelevel option, use: /help consolelevel')
   end
@@ -42,10 +50,12 @@ end
 function getHelp()
     local availableOptions = ''
     for levelName, logLevel in pairs(levels) do
-      if availableOptions == '' then
-        availableOptions = levelName
-      else
-        availableOptions = availableOptions..'/'..levelName
+      if type(logLevel) == 'number' then
+        if availableOptions == '' then
+          availableOptions = levelName
+        else
+          availableOptions = availableOptions..'/'..levelName
+        end
       end
     end
     return "Sets the console level, use: /consolelevel ["..availableOptions.."]"
